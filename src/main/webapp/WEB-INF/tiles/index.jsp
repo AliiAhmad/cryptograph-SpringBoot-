@@ -1,5 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+
 <section class="slice sct-color-2 border-top border-bottom">
 	<div class="container mt-3">
 		<span class="clearfix"></span>
@@ -8,7 +9,7 @@
         </h3>
 		<div
 			class="fluid-paragraph fluid-paragraph-sm c-gray-light strong-300 text-center">
-			Crypto currency look up - find the price from various exchanges and
+			Crypto currency look up - find the price from various exchanges and 
 			more..</div>
 		<span class="space-xs-lg"></span>
 		<div class="feature feature--boxed-border feature--bg-1">
@@ -237,7 +238,7 @@ HomeWidget = {
     });
   },
   getAutoCompleteData: function() {
-    $.getJSON("http://localhost:8080/", function(data) {
+	$.getJSON('symbols', function(data) {
       $.map(data, function(key, value) {
         home.arr.push(key + ',' + value);
       });

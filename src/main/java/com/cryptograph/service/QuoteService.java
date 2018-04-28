@@ -35,7 +35,6 @@ public class QuoteService implements IQuoteService
 
         boolean inCache = CacheManager.isInCache(CacheKey.BINANCE);
         if (inCache) {
-            System.out.println("Binance from cache ==============================================");
             return CompletableFuture.completedFuture(Optional.ofNullable(CacheManager.getFromCache(CacheKey.BINANCE)));
         }
         StringBuilder urlBuilder = new StringBuilder();
@@ -69,7 +68,6 @@ public class QuoteService implements IQuoteService
         }
         boolean inCache = CacheManager.isInCache(CacheKey.BITTREX);
         if (inCache) {
-            System.out.println("Bittrex from cache ==============================================");
             return CompletableFuture.completedFuture(Optional.ofNullable(CacheManager.getFromCache(CacheKey.BITTREX)));
         }
         StringBuilder urlBuilder = new StringBuilder();
