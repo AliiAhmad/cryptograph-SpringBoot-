@@ -9,7 +9,6 @@
 	<packaging>war</packaging>
 	<name>CryptoGraph</name>
 	<description></description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
